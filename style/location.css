@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --black-color: #151515;
+    --brown-color: #d5966c;
+    --white-color: #fff;
+}
+body{
+    width: 100%;
+}
+header{
+    position: relative;
+    display: flex;
+    width: 100%;
+    background-image: url("../assets/Bitmap.png");
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+}
+#location-marker{
+    margin-left: 45px;
+}
+
+
+#location-button{
+    position: absolute;
+    display: flex;
+    top:0px;
+    left: 155px;
+    width: 260px;
+    height: 72px;
+    text-decoration: none;
+    color: var(--white-color);
+    
+
+}
+.button-text{
+    display: flex;
+    background-color: var(--black-color);
+    width: 204px;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+}
+.button-arrows{
+    background-color: var(--brown-color);
+    width: 56px;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-arrows:hover{
+    background-color: var(--brown-color);
+}
+.button-text:hover{
+ background-color: var(--brown-color);
+}
+#location-button:hover .button-arrows{
+    background-color: var(--black-color);
+}
+#location-button:hover  .button-arrows:hover{
+    background-color: var(--black-color);
+}
+#location-button:hover  .button-text{
+    background-color: var(--brown-color);
+}
+.Loction-Info{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background-color: var(--black-color);
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+}
+.location-text{
+    width: 350px;
+    color: var(--white-color);
+    font-family: Big Shoulders Display;
+font-size: 70px;
+font-style: normal;
+font-weight: 900;
+line-height: 70px; 
+text-transform: uppercase;
+}
+.location-address{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+   align-items: end;
+}
+.street-location{
+    width: 540px;
+    color: var(--brown-color);
+    font-family: Big Shoulders Display;
+font-size: 36px;
+font-style: normal;
+font-weight: 900;
+line-height: 36px; 
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+.address-details{
+    width: 540px;
+    color: var(--white-color);
+    font-family: Outfit;
+font-size: 22px;
+font-style: normal;
+font-weight: 300;
+line-height: 32px;
+margin-bottom: 30px;
+}
+.about-info{
+    color: var(--white-color);
+    width: 540px;
+    font-family: Outfit;
+font-size: 22px;
+font-style: normal;
+font-weight: 300;
+line-height: 32px;
+}
+footer{
+    width: 100%;
+    background-color: var(--brown-color);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text{
+    width: 800px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-text img{
+    width: 159.572px;
+    height: 58px;
+}
+.footer-text p{
+    width: 430px;
+    font-family: Outfit;
+    color: var(--black-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px; /* 155.556% */
+}
+
+.footer-icon{
+    width: 350px;
+    height: 100px;
+    display: flex;
+    justify-content: end;
+}
+.footer-icon img{
+    width: 100px;
+    height: 20px;
+}
+
+@media only screen and (max-width: 1279px) {
+    body {
+      width: max-content;
+    }
+  }
